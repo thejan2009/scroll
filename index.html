@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+	</head>
+
+	<body>
+		<center>
+			scroll over the gray box
+			<div id="num">0</div>
+			<div id="target" style="background:#888888; width:80%; height:200px"/>
+		</center>
+
+		<script>
+			(function() {
+				var n = document.getElementById("num");
+				var t = document.getElementById("target");
+				t.addEventListener('wheel',function(){n.innerHTML=Number(n.innerHTML)+1;}, false);
+			})()
+		</script>
+	</body>
+</html>
